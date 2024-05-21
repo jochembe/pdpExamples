@@ -1,0 +1,187 @@
+# baseURI: https://github.com/BennoJochems/lbpdExamples/exampleProducts/BSH
+# imports: https://w3id.org/bpo
+# prefix: BSH
+
+@prefix BSH: <https://github.com/BennoJochems/lbpdExamples/exampleProducts/BSH#> .
+@prefix bpo: <https://w3id.org/bpo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/BennoJochems/lbpdExamples/exampleProducts/BSH>
+    rdf:type owl:Ontology ;
+    owl:imports <https://w3id.org/bpo> ;
+.
+
+# MANUFACTURER IDENTIFICATION
+BSH:Manufacturer
+    rdf:type schema:Organization ;
+    schema:name "HBS Berga GmbH & Co. KG" ;
+    schema:url <https://www.hbs-berga.de/> ;
+.
+
+# GENERAL PRODUCT SPECIFICATIONS
+BSH:Thickness
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    qudt:unit unit:MilliM ;
+    schema:value "125"^^xsd:double ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/13ddbdd5-6e6e-41f6-892c-32a7f1b6ba82" ;
+.
+BSH:ThermalConductivity
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    qudt:unit unit:W-PER-M-K ;
+    schema:value "0.12"^^xsd:double ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/7827a71f-8af3-4b86-8ff8-cdecf2e07474" ;
+.
+BSH:SpecificHeatCapacity
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    qudt:unit unit:J-PER-KiloGM-K ;
+    schema:value "1600"^^xsd:double ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/8db79d23-fb19-42da-b7a8-03124602a152" ;
+.
+BSH:WaterVapourPermeability
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "50"^^xsd:double ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/1abd40a2-224f-424c-ac34-dac118f12d4e" ;
+.
+BSH:ReactionToFire
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "D-s2,d0"^^xsd:string ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/aff6239d-844c-448b-9ec5-e284f8102544" ;
+.
+BSH:WoodSpecies
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "europ. Spruce (PCAB)"^^xsd:string ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/class/e025becb-e870-41ca-b916-84a73d5ec390/prop/TechnicalProperties/44a760cc-fa67-4531-8b92-257604837b88" ;
+.
+BSH:FormaldehydeEmissionClass
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "E1"^^xsd:string ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/b1783d90-747a-49ca-9084-d08cadbb4565" ;
+.
+
+# MECHANICAL BEHAVIOUR
+BSH:ModulusOfElasticity_E0mean
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "11600"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/0b44b46f-03ac-42c4-a500-408d5d175c0f" ;
+.
+BSH:ModulusOfElasticity_E90mean
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "370"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/11fdf9ff-78e5-4167-987e-92ddd15f4261" ;
+.
+BSH:ShearModulus_G090mean
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "690"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/6524a7c7-dcd0-4ce3-9047-649e9a8d8771" ;
+.
+BSH:ShearModulus_G9090mean
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "50"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/8c284f1c-ec79-4899-977f-81d2f11b1920" ;
+.
+BSH:BendingStrength_fmk
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "24"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/44d78564-3485-4652-9368-a8957255fbcf" ;
+.
+BSH:TensileStrength_ft90k
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "0.12"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/118f8880-22b2-4dc3-8247-8dda780617f3" ;
+.
+BSH:CompressiveStrength_fc90k
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "2.5"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/36998669-a567-44c9-9016-a99b17f28341" ;
+.
+BSH:ShearStrength_fv090k
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "4.0"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/7777a766-c152-45fa-a7fb-78bdd044c11d" ;
+.
+BSH:ShearStrength_fv9090k
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "1.4"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/6df69113-fd9f-4f85-a9a2-03d6b190cef2" ;
+.
+BSH:TensileStrength_ft0k
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "14"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/4d1bd27e-e061-4348-ac0e-ceea3c6a1211" ;
+.
+BSH:CompressiveStrength_fc0k
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "21"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/834cd5a2-ef5f-40aa-b623-cd6940ccffb2" ;
+.
+BSH:ShearStrength_fv090k_Anet
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Attribute ;
+    schema:value "4.4"^^xsd:double ;
+    qudt:unit unit:N-PER-MilliM2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/class/d66ab782-a62f-4251-8b8b-56c5186b7c34/prop/TechnicalProperties/b0d56221-0a96-41f9-9f8a-dde0c839463e" ;
+.
+
+
+# DEFINE AS PRODUCT
+BSH:Brettsperrholz
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Assembly, bpo:Product;
+    schema:manufacturer BSH:Manufacturer ;
+    schema:identifier <https://www.dataholz.eu/fileadmin/dataholz/media/baustoffe/DoPs/dop_hbs-berga-bsp_de_en.pdf> ;
+    bpo:hasAttribute BSH:Thickness ;
+    bpo:hasAttribute BSH:ThermalConductivity ;
+    bpo:hasAttribute BSH:SpecificHeatCapacity ;
+    bpo:hasAttribute BSH:WaterVapourPermeability ;
+    bpo:hasAttribute BSH:ReactionToFire ;
+    bpo:hasAttribute BSH:WoodSpecies ;
+    bpo:hasAttribute BSH:FormaldehydeEmissionClass ;
+    bpo:hasAttribute BSH:ModulusOfElasticity_E0mean ;
+    bpo:hasAttribute BSH:ModulusOfElasticity_E90mean ;
+    bpo:hasAttribute BSH:ShearModulus_G090mean ;
+    bpo:hasAttribute BSH:ShearModulus_G9090mean ;
+    bpo:hasAttribute BSH:BendingStrength_fmk ;
+    bpo:hasAttribute BSH:TensileStrength_ft90k ;
+    bpo:hasAttribute BSH:CompressiveStrength_fc90k ;
+    bpo:hasAttribute BSH:ShearStrength_fv090k ;
+    bpo:hasAttribute BSH:ShearStrength_fv9090k ;
+    bpo:hasAttribute BSH:TensileStrength_ft0k ;
+    bpo:hasAttribute BSH:CompressiveStrength_fc0k ;
+    bpo:hasAttribute BSH:ShearStrength_fv090k_Anet ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/class/d66ab782-a62f-4251-8b8b-56c5186b7c34" ;
+.

@@ -1,0 +1,63 @@
+# baseURI: https://github.com/BennoJochems/lbpdExamples/exampleProducts/Trennwand
+# imports: https://w3id.org/bpo
+# prefix: TW
+
+@prefix TW: <https://github.com/BennoJochems/lbpdExamples/exampleProducts/Trennwand#> .
+@prefix bpo: <https://w3id.org/bpo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/BennoJochems/lbpdExamples/exampleProducts/Trennwand>
+    rdf:type owl:Ontology ;
+    owl:imports <https://w3id.org/bpo> ;
+    owl:imports <https://github.com/BennoJochems/lbpdExamples/exampleProducts/BSH> ;
+.
+
+# MATERIAL LAYERS
+TW:Layer_1
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Product ;
+    bpo:isConnectedWith TW:Layer_2 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuildingElementPart" ;
+.
+TW:Layer_2
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Product ;
+    bpo:isConnectedWith TW:Layer_1, TW:Layer_3 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuildingElementPart" ;
+.
+TW:Layer_3
+    rdf:type owl:NamedIndividual ;
+    bpo:realisesObject BSH:Brettsperrholz ;
+    bpo:isConnectedWith TW:Layer_2, TW:Layer_4 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuildingElementPart" ;
+.
+TW:Layer_4
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Product ;
+    bpo:isConnectedWith TW:Layer_3, TW:Layer_5 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuildingElementPart" ;
+.
+TW:Layer_5
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Product ;
+    bpo:isConnectedWith TW:Layer_4 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuildingElementPart" ;
+.
+
+# DEFINE COMPONENT ASSEMBLY
+TW:twmxxo02a_1 
+    rdf:type owl:NamedIndividual ;
+    rdf:type bpo:Assembly ;
+    bpo:consistsOf TW:Layer_1 ;
+    bpo:consistsOf TW:Layer_2 ;
+    bpo:consistsOf TW:Layer_3 ;
+    bpo:consistsOf TW:Layer_4 ;
+    bpo:consistsOf TW:Layer_5 ;
+    bpo:hasBSDDGUID "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall" ;
+.
