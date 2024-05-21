@@ -1,0 +1,184 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition [Design_Transfer_View]','ExchangeRequirement [Architecture]','Option [dataholz.eu version 2024-02-12--build-48]'),'2;1');
+FILE_NAME('twmxxo02a-01.ifc','2024-03-16T16:09:40',('dataholz.eu - Katalog bauphysikalisch und \X\F6kologisch gepr\X\FCfter und/oder zugelassener Holzbauteile','info@dataholz.eu'),('Holzforschung Austria - \X\D6sterreichische Gesellschaft f\X\FCr Holzforschung'),'dataholz.eu IFC library 2024-02-12--build-48','dataholz.eu backend 2024-02-12--build-48','BuildingSMART Austria');
+FILE_SCHEMA(('IFC4'));
+ENDSEC;
+DATA;
+#46=IFCRELDEFINESBYTYPE('1xSFdgykz0HBsUpqIR9Xxy',#25,$,$,(#43),#44);
+#45=IFCRELCONTAINEDINSPATIALSTRUCTURE('1ZV$fqy2HFpOfAc0sEDm5y',#25,$,$,(#43),#26);
+#44=IFCWALLTYPE('0ytmbOkk4Hvw46051MdJZb',#25,'twmxxo02a',$,$,$,$,'3cdf0958-bae1-11e7-a106-0050569d38e5',$,.NOTDEFINED.);
+#43=IFCWALL('0yfcPfkk4Hvw46051MdJZb',#25,'WandInstanz',$,$,#12,#42,'3ca66669-bae1-11e7-a106-0050569d38e5',.NOTDEFINED.);
+#42=IFCPRODUCTDEFINITIONSHAPE($,$,(#40,#35));
+#41=IFCPRESENTATIONLAYERASSIGNMENT('dataholzLayer',$,(#40,#35),$);
+#40=IFCSHAPEREPRESENTATION(#7,'Body','SweptSolid',(#39));
+#39=IFCEXTRUDEDAREASOLID(#38,#5,#3,3.0);
+#38=IFCARBITRARYCLOSEDPROFILEDEF(.AREA.,'twmxxo02a-01 (300 x 5000 )',#37);
+#37=IFCINDEXEDPOLYCURVE(#36,(IFCLINEINDEX((1,2,3,4,1))),$);
+#36=IFCCARTESIANPOINTLIST2D(((0.0,0.0),(5.0,0.0),(5.0,0.3),(0.0,0.3)));
+#35=IFCSHAPEREPRESENTATION(#8,'Axis','Curve2D',(#34));
+#34=IFCINDEXEDPOLYCURVE(#33,(IFCLINEINDEX((1,2))),$);
+#33=IFCCARTESIANPOINTLIST2D(((0.0,0.0),(5.0,0.0)));
+#32=IFCRELAGGREGATES('3rNfjcjgTFNPX4PFqjXzEt',#25,$,$,#27,(#26));
+#31=IFCRELAGGREGATES('2V7x5n8A93tAN4tzUooNiV',#25,$,$,#28,(#27));
+#30=IFCRELAGGREGATES('1N2WPUk0T8ZxOBMkmGsh9o',#25,$,$,#29,(#28));
+#29=IFCPROJECT('3XKNNYryf7zgAda43sDKx7',#25,'dataholz.eu IFC Project',$,$,$,$,(#6),#16);
+#28=IFCSITE('2HpTdCeML6x8FuSC9tYpxG',#25,'Vienna',$,$,#9,$,$,.ELEMENT.,(52,31,0,0),(13,24,0,0),0.0,$,$);
+#27=IFCBUILDING('15_iMQSJ58LQ3mAfhomxeR',#25,'dataholz.eu Lab',$,$,#10,$,$,.ELEMENT.,$,$,$);
+#26=IFCBUILDINGSTOREY('1rdVNYH6P4aO5hQw4EQV8S',#25,'Level 0',$,$,#11,$,$,.ELEMENT.,0.0);
+#25=IFCOWNERHISTORY(#24,#19,$,.NOCHANGE.,$,$,$,1710605381);
+#24=IFCPERSONANDORGANIZATION(#23,#21,$);
+#23=IFCPERSON($,'dataholz.eu',$,$,$,$,$,(#22));
+#22=IFCTELECOMADDRESS(.OFFICE.,$,$,$,$,$,('info@dataholz.eu'),'https://www.dataholz.eu',$);
+#21=IFCORGANIZATION('HFA','Holzforschung AUSTRIA','\X\D6sterreichische Gesellschaft f\X\FCr Holzforschung',$,(#20));
+#20=IFCTELECOMADDRESS(.OFFICE.,$,$,$,$,$,('hfa@holzforschung.at'),'https://www.holzforschung.at',$);
+#19=IFCAPPLICATION(#18,'2024-02-12--build-48','dataholz.eu backend','dataholz.eu');
+#18=IFCORGANIZATION('NU','nu Datenautomaten GmbH',$,$,(#17));
+#17=IFCTELECOMADDRESS(.OFFICE.,$,$,$,$,$,('office@nu-gmbh.com'),'https://www.nu-gmbh.com',$);
+#16=IFCUNITASSIGNMENT((#15,#14,#13));
+#15=IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
+#14=IFCSIUNIT(*,.AREAUNIT.,$,.SQUARE_METRE.);
+#13=IFCSIUNIT(*,.VOLUMEUNIT.,$,.CUBIC_METRE.);
+#12=IFCLOCALPLACEMENT(#11,#5);
+#11=IFCLOCALPLACEMENT(#10,#5);
+#10=IFCLOCALPLACEMENT(#9,#5);
+#9=IFCLOCALPLACEMENT($,#5);
+#8=IFCGEOMETRICREPRESENTATIONSUBCONTEXT('Axis','Model',*,*,*,*,#6,$,.MODEL_VIEW.,$);
+#7=IFCGEOMETRICREPRESENTATIONSUBCONTEXT('Body','Model',*,*,*,*,#6,$,.MODEL_VIEW.,$);
+#6=IFCGEOMETRICREPRESENTATIONCONTEXT($,'Model',3,1.0E-5,#5,#1);
+#5=IFCAXIS2PLACEMENT3D(#4,#3,#2);
+#4=IFCCARTESIANPOINT((0.0,0.0,0.0));
+#3=IFCDIRECTION((0.0,0.0,1.0));
+#2=IFCDIRECTION((1.0,0.0,0.0));
+#1=IFCDIRECTION((0.0,1.0));
+#75=IFCRELASSOCIATESMATERIAL('1yPgFeNuz49xv01y7oZgk7',#25,$,$,(#43),#74);
+#74=IFCMATERIALLAYERSETUSAGE(#73,.AXIS2.,.POSITIVE.,0.0,$);
+#73=IFCMATERIALLAYERSET((#54,#62,#70,#71,#72),'twmxxo02a-01',$);
+#72=IFCMATERIALLAYER(#52,0.0625,.U.,'E','Holzwolleleichtbauplatte Verbundelement mit beidseitiger Gipskartonbeplankung (aussen: 15 mm GKF, innen: 12,5 mm GKB)',$,$);
+#71=IFCMATERIALLAYER(#60,0.025,.U.,'D','Trittschalld\X\E4mmung MW-T',$,$);
+#70=IFCMATERIALLAYER(#68,0.125,.U.,'C','Massivholz verklebt (z. B. Brettsperrholz, Brettstapel)',$,$);
+#69=IFCMATERIALDEFINITIONREPRESENTATION($,$,(#67),#68);
+#68=IFCMATERIAL('dataholz_massivholz_verklebt',$,$);
+#67=IFCSTYLEDREPRESENTATION(#7,$,$,(#66));
+#66=IFCSTYLEDITEM($,(#65),$);
+#65=IFCSURFACESTYLE('Braun Holz',.BOTH.,(#64));
+#64=IFCSURFACESTYLERENDERING(#63,0.0,IFCNORMALISEDRATIOMEASURE(0.6200000047683716),$,$,$,IFCNORMALISEDRATIOMEASURE(0.6200000047683716),$,.NOTDEFINED.);
+#63=IFCCOLOURRGB($,0.7764000296592712,0.63919997215271,0.4823000133037567);
+
+/*  #   Inserted Product Information    */
+
+/*  ##  Custom Property Set: Product Identification     */
+/*
+Manufacturer
+ProductName
+ProductURI
+*/
+#175=IFCMATERIALPROPERTIES('ePset_MaterialProduct',$,(#173,#170,#167),#68);
+
+#173=IFCPROPERTYSINGLEVALUE('35185082-a84e-4254-94cb-cd10807235fd','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/35185082-a84e-4254-94cb-cd10807235fd',IFCLABEL('HBS Berga GmbH & Co. KG'),$);
+#170=IFCPROPERTYSINGLEVALUE('productname','https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/productname',IFCLABEL('HBS Brettsperrholz'),$);
+#167=IFCPROPERTYSINGLEVALUE('ST12-IDPR','https://identifier.buildingsmart.org/uri/promaterial/universaltypes/1.0/class/MT12-PREF/prop/undefined_set/ST12-IDPR',IFCLABEL('https://www.dataholz.eu/fileadmin/dataholz/media/baustoffe/DoPs/dop_hbs-berga-bsp_de_en.pdf'),$);
+
+/*  ##  Native Property Set: Thermal    */
+/*
+ThermalConductivity
+SpecificHeatCapacity
+*/
+#164=IFCMATERIALPROPERTIES('Pset_MaterialThermal',$,(#162,#161),#68);
+
+#162=IFCPROPERTYSINGLEVALUE('ThermalConductivity',$,IFCREAL(0.12),$);
+#161=IFCPROPERTYSINGLEVALUE('SpecificHeatCapacity',$,IFCREAL(1600.00),$);
+
+/*  ##  Custom Property Set: General Specifications and Mechanical Behaviour */
+/*
+WaterVapourPermeability
+ReactionToFire
+WoodSpecies
+FormaldehydeEmissionClass
+ModulusOfElasticity_E0mean
+ModulusOfElasticity_E90mean
+ShearModulus_G090mean
+ShearModulus_G9090mean
+BendingStrength_fmk
+TensileStrength_ft90k
+CompressiveStrength_fc90k
+ShearStrength_fv090k
+ShearStrength_fv9090k
+TensileStrength_ft0k
+CompressiveStrength_fc0k
+ShearStrength_fv090k_Anet
+*/
+#159=IFCMATERIALPROPERTIES('ePset_HBSBrettsperrholz',$,(#158,#155,#152,#149,#146,#143,#140,#137,#134,#131,#128,#125,#122,#119,#116,#113),#68);
+
+#158=IFCPROPERTYSINGLEVALUE('1abd40a2-224f-424c-ac34-dac118f12d4e','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/1abd40a2-224f-424c-ac34-dac118f12d4e',IFCREAL(50.00),$);
+#155=IFCPROPERTYSINGLEVALUE('aff6239d-844c-448b-9ec5-e284f8102544','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/aff6239d-844c-448b-9ec5-e284f8102544',IFCLABEL('D-s2,d0'),$);
+#152=IFCPROPERTYSINGLEVALUE('bcbf5352-bf0f-4866-8967-eae74e559594','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/class/e025becb-e870-41ca-b916-84a73d5ec390/prop/TechnicalProperties/44a760cc-fa67-4531-8b92-257604837b88',IFCLABEL('europ. Spruce (PCAB)'),$);
+#149=IFCPROPERTYSINGLEVALUE('b1783d90-747a-49ca-9084-d08cadbb4565','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/b1783d90-747a-49ca-9084-d08cadbb4565',IFCLABEL('E1'),$);
+#146=IFCPROPERTYSINGLEVALUE('0b44b46f-03ac-42c4-a500-408d5d175c0f','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/0b44b46f-03ac-42c4-a500-408d5d175c0f',IFCREAL(11600.00),$);
+#143=IFCPROPERTYSINGLEVALUE('11fdf9ff-78e5-4167-987e-92ddd15f4261','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/11fdf9ff-78e5-4167-987e-92ddd15f4261',IFCREAL(370.00),$);
+#140=IFCPROPERTYSINGLEVALUE('6524a7c7-dcd0-4ce3-9047-649e9a8d8771','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/6524a7c7-dcd0-4ce3-9047-649e9a8d8771',IFCREAL(690.00),$);
+#137=IFCPROPERTYSINGLEVALUE('8c284f1c-ec79-4899-977f-81d2f11b1920','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/8c284f1c-ec79-4899-977f-81d2f11b1920',IFCREAL(50.00),$);
+#134=IFCPROPERTYSINGLEVALUE('44d78564-3485-4652-9368-a8957255fbcf','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/44d78564-3485-4652-9368-a8957255fbcf',IFCREAL(24.00),$);
+#131=IFCPROPERTYSINGLEVALUE('118f8880-22b2-4dc3-8247-8dda780617f3','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/118f8880-22b2-4dc3-8247-8dda780617f3',IFCREAL(0.12),$);
+#128=IFCPROPERTYSINGLEVALUE('36998669-a567-44c9-9016-a99b17f28341','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/36998669-a567-44c9-9016-a99b17f28341',IFCREAL(2.50),$);
+#125=IFCPROPERTYSINGLEVALUE('7777a766-c152-45fa-a7fb-78bdd044c11d','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/7777a766-c152-45fa-a7fb-78bdd044c11d',IFCREAL(4.00),$);
+#122=IFCPROPERTYSINGLEVALUE('6df69113-fd9f-4f85-a9a2-03d6b190cef2','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/6df69113-fd9f-4f85-a9a2-03d6b190cef2',IFCREAL(1.40),$);
+#119=IFCPROPERTYSINGLEVALUE('4d1bd27e-e061-4348-ac0e-ceea3c6a1211','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/4d1bd27e-e061-4348-ac0e-ceea3c6a1211',IFCREAL(14.00),$);
+#116=IFCPROPERTYSINGLEVALUE('834cd5a2-ef5f-40aa-b623-cd6940ccffb2','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/prop/834cd5a2-ef5f-40aa-b623-cd6940ccffb2',IFCREAL(21.00),$);
+#113=IFCPROPERTYSINGLEVALUE('f5b0cb3d-4f84-444a-89d8-049effc7cb68','https://identifier.buildingsmart.org/uri/cei-bois.org/wood/1.0.0/class/d66ab782-a62f-4251-8b8b-56c5186b7c34/prop/TechnicalProperties/b0d56221-0a96-41f9-9f8a-dde0c839463e',IFCREAL(4.4),$);
+
+/*      Insertion End                   */
+
+#62=IFCMATERIALLAYER(#60,0.025,.U.,'B','Trittschalld\X\E4mmung MW-T',$,$);
+#61=IFCMATERIALDEFINITIONREPRESENTATION($,$,(#59),#60);
+#60=IFCMATERIAL('dataholz_trittschalld\X\E4mmung_mw_t',$,$);
+#59=IFCSTYLEDREPRESENTATION(#7,$,$,(#58));
+#58=IFCSTYLEDITEM($,(#57),$);
+#57=IFCSURFACESTYLE('Gelb Mineralwolle',.BOTH.,(#56));
+#56=IFCSURFACESTYLERENDERING(#55,0.0,IFCNORMALISEDRATIOMEASURE(0.6200000047683716),$,$,$,IFCNORMALISEDRATIOMEASURE(0.6200000047683716),$,.NOTDEFINED.);
+#55=IFCCOLOURRGB($,0.9215999841690063,0.9215999841690063,0.0);
+#54=IFCMATERIALLAYER(#52,0.0625,.U.,'A','Holzwolleleichtbauplatte Verbundelement mit beidseitiger Gipskartonbeplankung (aussen: 15 mm GKF, innen: 12,5 mm GKB)',$,$);
+#53=IFCMATERIALDEFINITIONREPRESENTATION($,$,(#51),#52);
+#52=IFCMATERIAL('dataholz_holzwolleleichtbauplatte',$,$);
+#51=IFCSTYLEDREPRESENTATION(#7,$,$,(#50));
+#50=IFCSTYLEDITEM($,(#49),$);
+#49=IFCSURFACESTYLE('Grau Default',.BOTH.,(#48));
+#48=IFCSURFACESTYLERENDERING(#47,0.0,IFCNORMALISEDRATIOMEASURE(0.6200000047683716),$,$,$,IFCNORMALISEDRATIOMEASURE(0.6200000047683716),$,.NOTDEFINED.);
+#47=IFCCOLOURRGB($,0.941100001335144,0.941100001335144,0.941100001335144);
+#110=IFCRELDEFINESBYPROPERTIES('1dFj6KTyPC58i3un6aiv48',#25,$,$,(#43),#109);
+#109=IFCPROPERTYSET('2Ez4x1FSj9hfiwt$5BAMb4',#25,'Pset_WallCommon',$,(#103,#104,#105,#106,#107,#108));
+#108=IFCPROPERTYSINGLEVALUE('IsExternal',$,IFCBOOLEAN(.T.),$);
+#107=IFCPROPERTYSINGLEVALUE('Combustible',$,IFCBOOLEAN(.T.),$);
+#106=IFCPROPERTYSINGLEVALUE('ThermalTransmittance',$,IFCREAL(0.27),$);
+#105=IFCPROPERTYSINGLEVALUE('Feuerwiderstand',$,IFCLABEL('REI90'),$);
+#104=IFCPROPERTYSINGLEVALUE('LoadBearing',$,IFCBOOLEAN(.T.),$);
+#103=IFCPROPERTYENUMERATEDVALUE('Status',$,(IFCLABEL('EXISTING')),#102);
+#102=IFCPROPERTYENUMERATION('PEnum_ElementStatus',(IFCLABEL('NEW'),IFCLABEL('EXISTING'),IFCLABEL('DEMOLISH'),IFCLABEL('TEMPORARY'),IFCLABEL('OTHER'),IFCLABEL('NOTKNOWN'),IFCLABEL('UNSET')),$);
+#101=IFCRELDEFINESBYPROPERTIES('1c6X9MxAfElAxd4FuFYQZf',#25,$,$,(#43),#100);
+#100=IFCPROPERTYSET('2Nq3dpHIfE7fpyQ2j8Z88$',#25,'Set_Dataholz',$,(#76,#77,#78,#79,#80,#81,#82,#83,#84,#85,#86,#87,#88,#89,#90,#91,#92,#93,#94,#95,#96,#97,#98,#99));
+#99=IFCPROPERTYSINGLEVALUE('PENRT',$,IFCREAL(888.7148),$);
+#98=IFCPROPERTYSINGLEVALUE('PENRM',$,IFCREAL(21.4757),$);
+#97=IFCPROPERTYSINGLEVALUE('PENRE',$,IFCREAL(867.2391),$);
+#96=IFCPROPERTYSINGLEVALUE('PERT',$,IFCREAL(1046.4372),$);
+#95=IFCPROPERTYSINGLEVALUE('PERM',$,IFCREAL(984.0042),$);
+#94=IFCPROPERTYSINGLEVALUE('PERE',$,IFCREAL(62.433),$);
+#93=IFCPROPERTYSINGLEVALUE('POCP',$,IFCREAL(0.05751212),$);
+#92=IFCPROPERTYSINGLEVALUE('EP',$,IFCREAL(5.0079478E-6),$);
+#91=IFCPROPERTYSINGLEVALUE('AP',$,IFCREAL(0.09916837),$);
+#90=IFCPROPERTYSINGLEVALUE('ODP',$,IFCREAL(0.23410606),$);
+#89=IFCPROPERTYSINGLEVALUE('GWP',$,IFCREAL(-50.99924),$);
+#88=IFCPROPERTYSINGLEVALUE('GWP_biogen',$,IFCREAL(-107.26613),$);
+#87=IFCPROPERTYSINGLEVALUE('GWP_fossil',$,IFCREAL(56.26688),$);
+#86=IFCPROPERTYSINGLEVALUE('DeltaOi3Indicator',$,IFCREAL(52.33809),$);
+#85=IFCPROPERTYSINGLEVALUE('Erneuerbarer Energieanteil',$,IFCREAL(6.7156),$);
+#84=IFCPROPERTYSINGLEVALUE('Einsatz an Primaerenergie',$,IFCREAL(929.6721),$);
+#83=IFCPROPERTYSINGLEVALUE('Anteil NAWAROS am Gesamtgewicht',$,IFCREAL(0.59021327),$);
+#82=IFCPROPERTYSINGLEVALUE('Verbaute Menge an NAWAROS',$,IFCREAL(77.83437),$);
+#81=IFCPROPERTYSINGLEVALUE('Flaechenbezogene_Masse',$,IFCREAL(133.7),$);
+#80=IFCPROPERTYSINGLEVALUE('L_n,w',$,IFCLABEL($),$);
+#79=IFCPROPERTYSINGLEVALUE('R_w',$,IFCLABEL('63'),$);
+#78=IFCPROPERTYSINGLEVALUE('Diffussionsverhalten',$,IFCBOOLEAN(.T.),$);
+#77=IFCPROPERTYSINGLEVALUE('ThermalTransmittance',$,IFCREAL(0.27),$);
+#76=IFCPROPERTYSINGLEVALUE('Feuerwiderstand Aussen',$,IFCLABEL('REI90'),$);
+ENDSEC;
+END-ISO-10303-21;
